@@ -1,10 +1,10 @@
 <template>
-  <Card />
+  <router-view></router-view>
 </template>
 
 <script setup>
-import Card from "./components/common/Card.vue";
+
 </script>
 
-<style>
+<style lang="scss" scoped>
 </style>
