@@ -3,10 +3,18 @@
     <div class="overlay">
       <div class="menu-items">
         <ul>
-          <li><a @click="click" href="#welcome-section"> 主页</a></li>
-          <li><a @click="click" href="#about">关于</a></li>
-          <li><a @click="click" href="#projects">作品集</a></li>
-          <li><a @click="click" href="#contact">联系我</a></li>
+          <li>
+            <a @click="click" href="#welcome-section"> 主页</a>
+          </li>
+          <li>
+            <a @click="click" href="#about">关于</a>
+          </li>
+          <li>
+            <a @click="click" href="#projects">作品集</a>
+          </li>
+          <li>
+            <a @click="click" href="#contact">联系我</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -26,6 +34,7 @@ const click = () => emit("click");
 </script>
 
 <style lang="scss" scoped>
+@import "./theme.scss";
 //Overlay Layer
 .menu-container {
   & .overlay,
@@ -34,7 +43,7 @@ const click = () => emit("click");
     right: 0;
     height: calc(100vh - 120px);
     width: calc(100vw - 120px);
-    background: #fafafa;
+    background: $primary-color;
   }
   &.active .overlay {
     animation: overlay-slide-in 300ms forwards 300ms;
@@ -178,22 +187,22 @@ const click = () => emit("click");
         }
         &:hover:after {
           content: " »";
-          color: #f300b4;
+          color: $second-color;
         }
       }
     }
   }
 
   a {
-    color: #fafafa;
+    color: $primary-color;
     &:visited {
-      color: #fafafa;
+      color: $primary-color;
     }
     &:hover {
-      color: #f300b4;
+      color: $second-color;
     }
     &:active {
-      color: #f300b4;
+      color: $second-color;
     }
   }
 }
