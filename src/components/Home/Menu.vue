@@ -140,7 +140,7 @@ const click = () => emit("click");
   // Menu Items: Animation
   ul,
   .social {
-    margin-left: -80px;
+    margin-left: -50vw;
     opacity: 0;
     animation: slide-out 200ms forwards;
   }
@@ -156,7 +156,7 @@ const click = () => emit("click");
     }
     to {
       opacity: 0;
-      margin-left: -80px;
+      margin-left: -50vw;
     }
   }
   &.active {
@@ -253,6 +253,22 @@ const click = () => emit("click");
       to {
         left: 0;
         width: 100vw;
+      }
+    }
+    &.active {
+      ul,
+      .social {
+        animation: slide-in 300ms forwards 600ms;
+      }
+    }
+    @keyframes slide-in {
+      from {
+        opacity: 0;
+        margin-left: 0px;
+      }
+      to {
+        opacity: 1;
+        margin-left: -70vw;
       }
     }
   }
