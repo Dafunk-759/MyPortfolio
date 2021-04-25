@@ -14,7 +14,7 @@ import About from "./About.vue";
 import Projects from "./Projects/Projects.vue";
 
 import { onBeforeUnmount, onMounted, ref } from "vue";
-const showMenu = ref(true);
+const showMenu = ref(false);
 const toggleShowMenu = () => (showMenu.value = !showMenu.value);
 
 onMounted(() => {

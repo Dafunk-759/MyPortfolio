@@ -4,30 +4,10 @@
       <div class="heading">
         <h3 class="title">作品集</h3>
         <p class="separator"></p>
-        <p class="subtitle">这里展示了我做的一些项目，和demo</p>
+        <p class="subtitle">这里展示了我做的一些项目和demo</p>
       </div>
       <div class="projects-wrapper">
-        <Project title="title" img="assets/logo.png" link="#" repo="#">
-          <small>
-            Built using Node, Express, MongoDB, CSS + Bulma, React.js and React
-            Router.
-          </small>
-          <p>
-            This is a full-stack website that I made which lets the users read
-            and post anonymous messages and replies.
-          </p>
-        </Project>
-        <Project title="title" img="assets/logo.png" link="#" repo="#">
-          <small>
-            Built using Node, Express, MongoDB, CSS + Bulma, React.js and React
-            Router.
-          </small>
-          <p>
-            This is a full-stack website that I made which lets the users read
-            and post anonymous messages and replies.
-          </p>
-        </Project>
-        <Project title="title" img="assets/logo.png" link="#" repo="#">
+        <Project title="title" :img="logo" link="/portfolio/drum" repo="#">
           <small>
             Built using Node, Express, MongoDB, CSS + Bulma, React.js and React
             Router.
@@ -44,6 +24,8 @@
 
 <script setup>
 import Project from "./Project.vue";
+import logo from "./projectImg/logo.png"
+
 </script>
 
 <style lang="scss" scoped>

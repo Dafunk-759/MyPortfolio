@@ -21,6 +21,7 @@
 
 <style lang="scss" scoped>
 @import "./theme.scss";
+
 // Header
 .welcome-section {
   background: #202736;
@@ -34,7 +35,7 @@
   &::before {
     content: "";
     position: fixed;
-    background: url(assets/home/Stars.svg);
+    background: url(./headerSvg/Stars.svg);
     background-attachment: fixed;
     width: 100%;
     min-height: 100vh;
@@ -55,7 +56,7 @@
     position: absolute;
     bottom: -300px;
     left: 0;
-    background: url(assets/home/Trees.svg) bottom left repeat-x;
+    background: url(./headerSvg/Trees.svg) bottom left repeat-x;
     /* background-position-x: 100px; */
     background-size: cover;
     width: 100%;
@@ -77,7 +78,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: url(assets/home/Silhouette.svg) bottom left no-repeat;
+    background: url(./headerSvg/Silhouette.svg) bottom left no-repeat;
     width: 50%;
     height: 50%;
     opacity: 0;
@@ -99,7 +100,7 @@
     top: 0;
     right: 0;
     position: fixed;
-    background: url(assets/home/Moon.svg) right 150% no-repeat;
+    background: url(./headerSvg/Moon.svg) right 150% no-repeat;
     background-size: 40% 40%;
     background-attachment: fixed;
     width: 100%;

@@ -1,5 +1,5 @@
 <template>
-  <div class="menu-container" :class="props.showMenu ? 'deactive' : 'active'">
+  <div class="menu-container" :class="props.showMenu ? 'active' : 'deactive'">
     <div class="overlay">
       <div class="menu-items">
         <ul>
@@ -93,10 +93,10 @@ const click = () => emit("click");
     z-index: -1;
   }
   &:before {
-    background: url(assets/home/Stars.svg);
+    background: url(./headerSvg/Stars.svg);
   }
   &:after {
-    background: url(assets/home/Trees.svg) bottom repeat-x;
+    background: url(./headerSvg/Trees.svg) bottom repeat-x;
   }
   // 失效动画
   &.deactive {
