@@ -10,7 +10,7 @@
       </h1>
       <div class="buttons">
         <a href="#projects">作品集</a>
-        <a href="#contact" class="cta">联系我</a>
+        <a href="#about" class="cta">关于我</a>
       </div>
     </div>
   </header>

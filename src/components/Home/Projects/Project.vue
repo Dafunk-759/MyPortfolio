@@ -1,6 +1,6 @@
 <template>
   <div class="project">
-    <a :href="props.link" class="project-link">
+    <a :href="props.link" target="blank" class="project-link">
       <img
         :src="props.img"
         :alt="`Screenshot of ${props.title}`"
@@ -16,7 +16,7 @@
         <a :href="props.repo">
           源码 <i class="fa fa-external-link" aria-hidden="true" />
         </a>
-        <a :href="props.link">
+        <a :href="props.link" target="blank">
           线上展示 <i class="fa fa-external-link" aria-hidden="true" />
         </a>
       </div>

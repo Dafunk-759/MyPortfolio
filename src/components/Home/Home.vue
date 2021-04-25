@@ -4,6 +4,7 @@
   <Header />
   <About />
   <Projects />
+  <Footer />
 </template>
 
 <script setup>
@@ -12,6 +13,7 @@ import Nav from "./Nav.vue";
 import Header from "./Header.vue";
 import About from "./About.vue";
 import Projects from "./Projects/Projects.vue";
+import Footer from "./Footer.vue"
 
 import { onBeforeUnmount, onMounted, ref } from "vue";
 const showMenu = ref(false);

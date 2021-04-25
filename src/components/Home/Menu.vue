@@ -12,10 +12,16 @@
           <li>
             <a @click="click" href="#projects">作品集</a>
           </li>
-          <li>
-            <a @click="click" href="#contact">联系我</a>
-          </li>
         </ul>
+        <!-- socialLinks -->
+        <div class="social">
+          <a href="https://github.com/Dafunk-759" target="blank" title="github">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://dafunk.gitee.io/" target="blank" title="blog">
+            <i class="fa fa-rss-square" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>

@@ -7,14 +7,12 @@
         <p class="subtitle">这里展示了我做的一些项目和demo</p>
       </div>
       <div class="projects-wrapper">
-        <Project title="title" :img="logo" link="/portfolio/drum" repo="#">
+        <Project title="个人博客" :img="blogImg" link="https://dafunk.gitee.io" repo="#">
           <small>
-            Built using Node, Express, MongoDB, CSS + Bulma, React.js and React
-            Router.
+            build by vuepress
           </small>
           <p>
-            This is a full-stack website that I made which lets the users read
-            and post anonymous messages and replies.
+            我使用vuepress快速搭建的个人博客，记录了我前端的学习笔记，欢迎访问。😀
           </p>
         </Project>
       </div>
@@ -24,7 +22,7 @@
 
 <script setup>
 import Project from "./Project.vue";
-import logo from "./projectImg/logo.png"
+import blogImg from "./projectImg/blog.jpg"
 
 </script>
 
